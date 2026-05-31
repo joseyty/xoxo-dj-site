@@ -4,6 +4,9 @@ body{
 
 .sub{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+
+
 }
 
 
@@ -20,9 +23,15 @@ ul{
     list-style: none;
     color: white;
     display: flex;
-    gap: 10px;
+    gap: 30px;
    padding: 0;
     margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -30,6 +39,7 @@ li{
     font-size: 20px;
    justify-content: space-between;
 }
+
 a:hover{
     color: aqua;
     border-bottom: 0.3px solid aqua;
@@ -58,4 +68,42 @@ a::after {
 
 a:hover::after {
     width: 100%;
+}
+
+img{
+    width: 50px;
+}
+
+.name-img{
+    width: 800px;
+    display: block;
+    transition: 2s ease;
+   
+}
+.pulsar{
+    animation: pulsar 2s ease-in-out infinite;
+    color: blueviolet;
+}
+
+.av{
+    font-size: 10px;
+  color: #545555;
+}
+
+.music{
+  font-size: 50px;
+}
+
+
+@keyframes pulsar {
+     0% {
+       transform: scale(1);
+        opacity: 1;      }
+    50% {
+       transform: scale(1.1);
+        opacity: 0.5;      }
+    100% {
+       transform: scale(1);
+        opacity: 1;  }
+
 }
