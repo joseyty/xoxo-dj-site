@@ -1,0 +1,61 @@
+body{
+   background-image: url(../img/xox3.png);
+}
+
+.sub{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.aspas,.aspas2{
+    font-size: 50px;
+}
+
+
+p{
+    color: white;
+}
+
+ul{
+    list-style: none;
+    color: white;
+    display: flex;
+    gap: 10px;
+   padding: 0;
+    margin: 0;
+}
+
+
+li{
+    font-size: 20px;
+   justify-content: space-between;
+}
+a:hover{
+    color: aqua;
+    border-bottom: 0.3px solid aqua;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    display: inline-block;
+ position: relative;
+
+}
+
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: #21deff;
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
