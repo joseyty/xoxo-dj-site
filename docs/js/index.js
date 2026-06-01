@@ -24,9 +24,6 @@
     music4.play();
   });
     music4.addEventListener("ended", () => {
-    music5.play();
-  });
-    music5.addEventListener("ended", () => {
     music1.play();
   });
     
