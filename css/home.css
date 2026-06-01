@@ -1,10 +1,12 @@
 body{
    background-image: url(../img/xox3.png);
+    background-size: cover;
+   
 }
 
 .sub{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 10px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 
 }
@@ -14,6 +16,10 @@ body{
     font-size: 50px;
 }
 
+.xo{
+    width: 100px;
+    margin-left: 100px;
+}
 
 p{
     color: white;
@@ -26,12 +32,14 @@ ul{
     gap: 30px;
    padding: 0;
     margin: 0;
+    margin-left: 100px;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 
@@ -75,7 +83,7 @@ img{
 }
 
 .name-img{
-    width: 800px;
+    width: 900px;
     display: block;
     transition: 2s ease;
    
@@ -91,9 +99,64 @@ img{
 }
 
 .music{
-  font-size: 50px;
+  font-size: 70px;
+ margin-right: 2%;
+}
+.but1{
+    background-color: transparent;
+    color: rgb(0, 247, 255);
+    border: 2px solid rgb(82, 206, 255);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 30px;
 }
 
+.but2{
+    background-color: transparent;
+    color: rgb(193, 19, 216);
+    border: 2px solid rgb(210, 122, 236);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+}
+
+
+.aspas{
+    font-size: 100px;
+   
+}
+
+.aspas2{
+    font-size: 100px;
+   
+}
+
+.apple{
+    width: 20px;
+}
+
+.tube{
+    width: 20px;
+}
+
+.but1:hover{
+    background-color: rgb(82, 206, 255);
+   
+}
+
+.but2:hover{
+    background-color: rgb(210, 122, 236);
+    
+}
 
 @keyframes pulsar {
      0% {
@@ -105,5 +168,49 @@ img{
     100% {
        transform: scale(1);
         opacity: 1;  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+   
+    body{
+        background-image: url(../img/xoxocelular.png);
+        background-size: cover;
+    }
+   
+   ul{
+   
+    color: white;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+
+    
+   }
+   li{
+    width: 7px;
+    font-size: 10px;
+   }
+
+   .xo{
+    width: 70px;
+    margin-left: 30px;
+   }
+   
+   
+    .name-img{
+        width: 90%;
+        max-width: 400px;
+    }
+    .music{
+        font-size: 30px;
+    }
+    .av{
+        font-size: 8px;
+    }
+
 
 }
